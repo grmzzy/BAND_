@@ -9,6 +9,7 @@
 <meta name="viewport" content="width-device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/custom2.css">
 <title>B A N D N O T E</title>
 </head>
 <body>
@@ -28,14 +29,11 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
              </button>
-             <a class="navbar-brand" href="main.jsp" style="height: 40px; margin-top: -5px;">
-    			<img src="images/logo1.png" alt="BANDNOTE Logo" style="width: auto; height: 35px">
-			</a>
         </div>
         
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 	<ul class="nav navbar-nav">
-                		<li class= "active"> <a href="main.jsp">메인</a></li>
+                		<li class= "active"> <a href="main.jsp"><img src="images/logo1.png" alt="BANDNOTE Logo" style="width: auto; height: 35px"></a></li>
                 	    <li> <a href="bbs.jsp">게시판</a></li>
                 	</ul>
                 	<%
@@ -72,14 +70,17 @@
 
 		</div>
 	</nav>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>The Band Note</h1>
-			<p>공연의 추억을 간직할 수 있는 특별한 온라인 방명록</p>
-			<p><a class="btn btn=primary btn-pull" href="#" role="button">자세히 알아보기</a></p>
-		</div>
-	</div>
-	
+<div class="container">
+    <div class="jumbotron" style="padding-left: 100px;">
+        <h1 id="bandNote1" style="font-size: calc(6vw + 5px);">The</h1>
+        <h1 id="bandNote2" style="font-size: calc(8vw + 5px);">Band Note</h1>
+        <p>공연의 추억을 간직할 수 있는 특별한 온라인 방명록</p>
+        <p><a class="btn btn-primary btn-pull" href="#myCarousel" role="button" style="background-color: #FFF; border-color: #FFF;"><i><img src="images/guitar.png" alt="Guitar" style="width: 50px;"></i></a></p>
+        <img src="images/message.png" alt="message">
+    </div>
+</div>
+
+
 <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- data-interval은 슬라이드 간 간격을 밀리초 단위로 설정합니다 -->
         <div class="carousel-inner">
@@ -96,30 +97,23 @@
     </div>
 </div>
 
-	
-	
-	<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img src="images/text.png" class="img-responsive" style="width: 150px; height: auto;">
-                        </div>
-                        <div class="col-sm-6">
-                            <h2>어쩌구저쩌구</h2>
-                            <p>어쩌구저쩌구어쩌구저쩌구</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="footer">
+    <p> © BandNote. 2024 All rights reserved. </p>
 </div>
+
+<style>
+    .footer {
+        text-align: center;
+       	padding: 25px;
+    }
+</style>
+
    
    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
    <script src="js/bootstrap.js"></script>
    
+ 
 </body>
+
+
 </html>
